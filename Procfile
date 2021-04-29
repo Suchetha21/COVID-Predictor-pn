@@ -1,0 +1,1 @@
+wed gunicorn pred:app

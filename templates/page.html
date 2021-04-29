@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COVID Predictor</title>
+</head>
+<body style="display:flex; flex-direction:column; align-items:initial; justify-content:left; background-color:rgb(71, 197, 255)">
+    <h1>Covid predictor</h1>
+    <br>
+    <form action="/predict" method="post">
+        <h2>Full name </h2>
+        (To generate customised report)
+        <input type="text" name="full_name" id="full_name" value=None>
+        <h2>Age:</h2>
+        <input type="text" name="age" id="age" value=0>
+        <h2>Gender:</h2>
+
+<select id="gender" name="gender">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="0">Female</option>
+    <option value="1">male</option>
+    <option value="2">others</option>
+</select>
+        
+        <h2>Symptoms:</h2>
+        Cough:<input type="checkbox" name="Symptoms" value='cough'>
+        Fever:<input type="checkbox" name="Symptoms" value='fever'>
+        Sore throat:<input type="checkbox" name="Symptoms" value='sore_throat'>
+        Shortness of breath:<input type="checkbox" name="Symptoms" value='shortness_of_breath'>
+        Headache:<input type="checkbox" name="Symptoms" value='head_ache'>
+        
+        <h2>Test_indicator:</h2>
+
+            <select id="test_indicator" name="test_indicator">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="0">Abroad</option>
+                <option value="1">Contact with confirmed</option>
+                <option value="2">others</option>
+            </select>
+        <input type="submit" value="Predict">
+    </form>
+    <br>
+
+    
+    
+</body>
+</body>
+</html>
